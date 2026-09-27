@@ -1214,8 +1214,6 @@ char* hstr_print_selection(unsigned maxHistoryItems, char* pattern)
             } else {
                 print_selection_row(hstr->selection[i], y, width, pattern);
             }
-        } else {
-            mvprintw(y, 0, "  ");
         }
 
         if(hstr->promptBottom) {
